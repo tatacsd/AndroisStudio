@@ -20,6 +20,7 @@ public class ListViewActivity extends AppCompatActivity {
             "Introduction",
             "My Bio App - Relative Layout",
             "My Bio App - Linear Layout",
+            "Login Form - Constraint Layout"
     };
 
 
@@ -59,6 +60,11 @@ public class ListViewActivity extends AppCompatActivity {
                     case 2:
                         // go to the selected activity page (the actual -> the selected)
                         intent = new Intent(ListViewActivity.this, MyBioLinearLayout.class);
+                        startActivity(intent);
+                        break;
+                    case 3:
+                        // go to the selected activity page (the actual -> the selected)
+                        intent = new Intent(ListViewActivity.this, LoginFormActivity.class);
                         startActivity(intent);
                         break;
 

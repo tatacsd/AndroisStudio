@@ -1,6 +1,11 @@
 # AndroisStudio
-Hello there! I am learning how to use the Android Studio, feel free to clone the repository and play around with me :)
+Hello there! I am learning how to use the Android Studio following some youtube tutorial, feel free to clone the repository and play around with me :)
 
+<br>
+<ul>
+  <li> https://www.youtube.com/watch?v=I_-6TDZmCKY&ab_channel=ProgrammingPath </li>
+</ul>
+<br>
 ## Cloning
 if you do not know how to do it, let me try to help you
 

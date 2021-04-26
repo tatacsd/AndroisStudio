@@ -2,8 +2,11 @@ package com.example.learningandroid;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,18 +16,6 @@ public class ListViewActivity extends AppCompatActivity {
     // Data fields
     private ListView listView;
     private String[] options = {
-            "A",
-            "B",
-            "C",
-            "D",
-            "A",
-            "B",
-            "C",
-            "D",
-            "A",
-            "B",
-            "C",
-            "D",
             "A",
             "B",
             "C",
@@ -45,5 +36,13 @@ public class ListViewActivity extends AppCompatActivity {
         // Adding a model/ adapter to add the options
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options);
         listView.setAdapter(arrayAdapter);
+
+        // Add an event listener when the item is clicked
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(ListViewActivity.this, options[position], Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

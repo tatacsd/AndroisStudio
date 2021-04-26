@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Plus"
-        android:onClick="plusFunction"
+        android:onClick="operation"
 
         app:layout_constraintTop_toBottomOf="@+id/text_counter"
         app:layout_constraintRight_toRightOf="parent"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Minus"
-        android:onClick="minusFunction"
+        android:onClick="operation"
 
         app:layout_constraintTop_toBottomOf="@+id/btn_plus"
         app:layout_constraintRight_toRightOf="parent"
@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"
-        android:onClick="resetFunction"
+        android:onClick="operation"
 
         app:layout_constraintTop_toBottomOf="@+id/text_counter"
         app:layout_constraintLeft_toRightOf="@id/btn_plus" />

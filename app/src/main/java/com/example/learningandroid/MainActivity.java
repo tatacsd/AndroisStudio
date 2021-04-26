@@ -75,4 +75,26 @@ public class MainActivity extends AppCompatActivity {
     public void resetFunction(View view) {
         txtCounter.setText(String.valueOf(0));
     }
+
+    // Adding a function to all buttons
+    public void operation(View view) {
+        int id = view.getId();
+        int counter = Integer.parseInt(txtCounter.getText().toString());
+
+        switch (id){
+            case R.id.btn_plus:
+                counter++;
+                txtCounter.setText(String.valueOf(counter));
+                break;
+            case R.id.btn_minus:
+                if(counter != 0){
+                    counter--;
+                    txtCounter.setText(String.valueOf(counter));
+                }
+                break;
+            case R.id.btn_reset:
+                txtCounter.setText(String.valueOf(0));
+                break;
+        }
+    }
 }

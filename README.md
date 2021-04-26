@@ -37,4 +37,51 @@ File > New > Project from Version Control...
 <br>
 <br>
 ![image](https://user-images.githubusercontent.com/29147847/116085212-70ce5980-a653-11eb-829a-b9644aea9b93.png)
+<br>
+In URL you will paste
+```
+https://github.com/tatacsd/AndroisStudio.git
+```
+And in directory you will choose the folder you want to save the project.
+<br>
+Press ok
+<br>
+<br>
+Make your choice. >)
+<br>
+![image](https://user-images.githubusercontent.com/29147847/116087684-f6530900-a655-11eb-9988-9d04f263304a.png)
+<br>
+Now go grab a coffee or a cup of tea.
+
+### 3. Setup the device
+Tools > AVD Manager
+![image](https://user-images.githubusercontent.com/29147847/116088133-6eb9ca00-a656-11eb-8723-65b03de2305c.png)
+![image](https://user-images.githubusercontent.com/29147847/116088189-7e391300-a656-11eb-81be-ed34c502c605.png)
+![image](https://user-images.githubusercontent.com/29147847/116088268-90b34c80-a656-11eb-9c1f-a5bdc1c86659.png)
+<br>
+Download the Q system image
+![image](https://user-images.githubusercontent.com/29147847/116088404-b17ba200-a656-11eb-89db-a89c69d49de5.png)
+<br>
+Choose a name and cick in finish
+![image](https://user-images.githubusercontent.com/29147847/116088542-ce17da00-a656-11eb-8ae8-851e31595e08.png)
+Wait..
+![image](https://user-images.githubusercontent.com/29147847/116088607-df60e680-a656-11eb-8e86-489424511d2d.png)
+Close the window and press to run the project
+
+### 3. Running
+Choose the created virtual device and press run
+![image](https://user-images.githubusercontent.com/29147847/116088908-2bac2680-a657-11eb-8533-81eb44484fdb.png)
+The emulator will start and the after a while the app will be loaded
+![image](https://user-images.githubusercontent.com/29147847/116089041-4e3e3f80-a657-11eb-898c-87a4dbfa4428.png)
+![image](https://user-images.githubusercontent.com/29147847/116089100-5ac29800-a657-11eb-863f-1455f14af18b.png)
+
+
+
+
+
+
+
+
+
+
 

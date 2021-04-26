@@ -25,36 +25,54 @@ public class MainActivity extends AppCompatActivity {
         btnMinus = findViewById(R.id.btn_minus);
         btnReset = findViewById(R.id.btn_reset);
 
-        // Adding function to the buttons
-        btnPlus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int counter = Integer.parseInt(txtCounter.getText().toString());
-                counter++;
+//        // Adding function to the buttons
+//        btnPlus.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                int counter = Integer.parseInt(txtCounter.getText().toString());
+//                counter++;
+//
+//                txtCounter.setText(String.valueOf(counter));
+//            }
+//        });
+//
+//        btnMinus.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                int counter = Integer.parseInt(txtCounter.getText().toString());
+//                if (counter !=0){
+//                    counter--;
+//                    txtCounter.setText(String.valueOf(counter));
+//                }
+//
+//            }
+//        });
+//
+//        btnReset.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                txtCounter.setText(String.valueOf(0));
+//            }
+//        });
 
-                txtCounter.setText(String.valueOf(counter));
-            }
-        });
 
-        btnMinus.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int counter = Integer.parseInt(txtCounter.getText().toString());
-                if (counter !=0){
-                    counter--;
-                    txtCounter.setText(String.valueOf(counter));
-                }
+    }
 
-            }
-        });
+    /// Adding function to the buttons using methods
+    public void plusFunction(View view) {
+        int counter = Integer.parseInt(txtCounter.getText().toString());
+        counter++;
+        txtCounter.setText(String.valueOf(counter));
+    }
 
-        btnReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                txtCounter.setText(String.valueOf(0));
-            }
-        });
-
-
+    public void minusFunction(View view) {
+        int counter = Integer.parseInt(txtCounter.getText().toString());
+        if (counter !=0){
+            counter--;
+            txtCounter.setText(String.valueOf(counter));
+        }
+    }
+    public void resetFunction(View view) {
+        txtCounter.setText(String.valueOf(0));
     }
 }

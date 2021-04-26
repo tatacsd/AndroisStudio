@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -12,8 +13,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // Define data
     private TextView txtCounter;
-    private Button btnPlus, btnMinus, btnReset;
-
+    private Button btnPlus, btnMinus, btnReset, btnHideShow;
+    private ImageView ivAvatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPlus = findViewById(R.id.btn_plus);
         btnMinus = findViewById(R.id.btn_minus);
         btnReset = findViewById(R.id.btn_reset);
+        btnHideShow = findViewById(R.id.btn_hide_show);
+        ivAvatar = findViewById(R.id.iv_avatar);
 
 //        // Adding function to the buttons
 //        btnPlus.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +65,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnPlus.setOnClickListener(this);
         btnMinus.setOnClickListener(this);
         btnReset.setOnClickListener(this);
+
+        btnHideShow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(ivAvatar.getVisibility() == View.GONE){
+                    ivAvatar.setVisibility(View.VISIBLE);
+                } else {
+                    ivAvatar.setVisibility(View.GONE);
+                }
+            }
+        });
 
     }
 

@@ -56,6 +56,7 @@ Now go grab a coffee or a cup of tea.
 <br>
 ### 3. Setup the device
 Tools > AVD Manager
+<br>
 ![image](https://user-images.githubusercontent.com/29147847/116088133-6eb9ca00-a656-11eb-8723-65b03de2305c.png)
 <br>
 ![image](https://user-images.githubusercontent.com/29147847/116088189-7e391300-a656-11eb-81be-ed34c502c605.png)
@@ -68,10 +69,12 @@ Download the Q system image
 <br>
 <br>
 Choose a name and cick in finish
+<br>
 ![image](https://user-images.githubusercontent.com/29147847/116088542-ce17da00-a656-11eb-8ae8-851e31595e08.png)
 <br>
 <br>
 Wait..
+<br>
 ![image](https://user-images.githubusercontent.com/29147847/116088607-df60e680-a656-11eb-8e86-489424511d2d.png)
 <br>
 <br>
@@ -81,10 +84,12 @@ Close the window and press to run the project
 
 ### 3. Running
 Choose the created virtual device and press run
+<br>
 ![image](https://user-images.githubusercontent.com/29147847/116088908-2bac2680-a657-11eb-8533-81eb44484fdb.png)
 <br>
 <br>
 The emulator will start and the after a while the app will be loaded
+<br>
 ![image](https://user-images.githubusercontent.com/29147847/116089041-4e3e3f80-a657-11eb-898c-87a4dbfa4428.png)
 <br>
 ![image](https://user-images.githubusercontent.com/29147847/116089100-5ac29800-a657-11eb-863f-1455f14af18b.png)

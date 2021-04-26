@@ -1,5 +1,6 @@
 package com.example.learningandroid;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
@@ -16,8 +17,8 @@ public class ListViewActivity extends AppCompatActivity {
     // Data fields
     private ListView listView;
     private String[] options = {
-            "A",
-            "B",
+            "Introduction",
+            "My Bio App -Relative Layout",
             "C",
             "D",
     };
@@ -41,7 +42,23 @@ public class ListViewActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(ListViewActivity.this, options[position], Toast.LENGTH_SHORT).show();
+                //Toast.makeText(ListViewActivity.this, options[position], Toast.LENGTH_SHORT).show();
+
+                Intent intent;
+                // Adding the options selection
+                switch (position){
+                    case 0:
+                        // go to the selected activity page (the actual -> the selected)
+                        intent = new Intent(ListViewActivity.this, MainActivity.class);
+                        startActivity(intent);
+                        break;
+                    case 1:
+                        // go to the selected activity page (the actual -> the selected)
+                        intent = new Intent(ListViewActivity.this, MyBioRelativeLayout.class);
+                        startActivity(intent);
+                        break;
+
+                }
             }
         });
     }

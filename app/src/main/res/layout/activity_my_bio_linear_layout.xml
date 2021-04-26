@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyBioRelativeLayout" >
+    android:orientation="vertical"
+    tools:context=".MyBioLinearLayout">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
     <TextView
         android:layout_width="match_parent"
         android:id="@+id/txt_label"
@@ -19,14 +17,13 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
         android:layout_height="wrap_content"
-         />
+        />
 
     <EditText
         android:id="@+id/edt_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:layout_below="@+id/txt_label"
 
         android:hint="Enter Your name"
         android:inputType="textPersonName"
@@ -37,7 +34,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:layout_below="@+id/edt_name"
 
         android:hint="Enter Your Phone Number"
         android:inputType="phone"
@@ -48,7 +44,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:layout_below="@+id/edt_phone"
 
         android:hint="Enter Your Email"
         android:inputType="textEmailAddress"
@@ -59,7 +54,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:layout_below="@+id/edt_email"
 
         android:hint="Enter Your Address"
         android:inputType="textPostalAddress"
@@ -69,8 +63,8 @@
         android:layout_height="wrap_content"
         android:text="Enter"
         android:textAllCaps="false"
-        android:layout_below="@id/edt_address"
-        android:layout_centerHorizontal="true"
+
+       android:layout_gravity="center"
         />
-    </RelativeLayout>
-</ScrollView>
+
+</LinearLayout>

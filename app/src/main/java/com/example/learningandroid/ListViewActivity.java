@@ -18,9 +18,8 @@ public class ListViewActivity extends AppCompatActivity {
     private ListView listView;
     private String[] options = {
             "Introduction",
-            "My Bio App -Relative Layout",
-            "C",
-            "D",
+            "My Bio App - Relative Layout",
+            "My Bio App - Linear Layout",
     };
 
 
@@ -55,6 +54,11 @@ public class ListViewActivity extends AppCompatActivity {
                     case 1:
                         // go to the selected activity page (the actual -> the selected)
                         intent = new Intent(ListViewActivity.this, MyBioRelativeLayout.class);
+                        startActivity(intent);
+                        break;
+                    case 2:
+                        // go to the selected activity page (the actual -> the selected)
+                        intent = new Intent(ListViewActivity.this, MyBioLinearLayout.class);
                         startActivity(intent);
                         break;
 
